@@ -1,4 +1,4 @@
-FROM ghcr.io/xscd/fedora-silverblue:37
+FROM ghcr.io/xscd/fedora-silverblue:rawhide
 
 RUN rpm-ostree override remove gnome-terminal gnome-terminal-nautilus firefox firefox-langpacks && \
     rpm-ostree install distrobox gnome-console fastfetch htop && \
