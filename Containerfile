@@ -5,4 +5,5 @@ RUN rpm-ostree override remove gnome-terminal gnome-terminal-nautilus firefox fi
     rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-68b758f9a4 && \
     rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-a4efbb4d5e && \
     rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-94ec7a8b52 && \
+    rpm-ostree override replace https://bodhi.fedoraproject.org/updates/FEDORA-2023-cd974cf0a2 && \
     ostree container commit
