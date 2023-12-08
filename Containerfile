@@ -7,11 +7,11 @@ RUN rpm-ostree override remove gnome-terminal gnome-terminal-nautilus firefox fi
     rpm-ostree install gnome-console gdb fd-find fish distrobox && \
     rm var/lib/unbound/root.key && \
     rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/distrobox/1.5.0.2/2.fc39/noarch/distrobox-1.5.0.2-2.fc39.noarch.rpm && \
-    cd /etc/yum.repos.d/ && \
-    wget  https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-$(rpm -E %fedora)/trixieua-mutter-patched-fedora-$(rpm -E %fedora).repo && \
-    rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched gnome-shell mutter mutter-common xorg-x11-server-Xwayland gdm && \
-    rm trixieua-mutter-patched-fedora-39.repo && \
-    ls && \
-    rm /var/lib/gdm/.config/pulse/default.pa && \
+    #cd /etc/yum.repos.d/ && \
+    #wget  https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-$(rpm -E %fedora)/trixieua-mutter-patched-fedora-$(rpm -E %fedora).repo && \
+    #rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched gnome-shell mutter mutter-common xorg-x11-server-Xwayland gdm && \
+    #rm trixieua-mutter-patched-fedora-39.repo && \
+    #ls && \
+    #rm /var/lib/gdm/.config/pulse/default.pa && \
 
     ostree container commit
