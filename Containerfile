@@ -11,5 +11,6 @@ RUN rpm-ostree override remove gnome-terminal gnome-terminal-nautilus firefox fi
     wget  https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-$(rpm -E %fedora)/trixieua-mutter-patched-fedora-$(rpm -E %fedora).repo && \
     rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:trixieua:mutter-patched gnome-shell mutter mutter-common xorg-x11-server-Xwayland gdm && \
     rm trixieua-mutter-patched-fedora-39.repo && \
+    cd ; var/lib/gdm/.config/pulse/default.pa && \
 
     ostree container commit
