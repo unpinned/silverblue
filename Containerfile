@@ -1,4 +1,6 @@
-FROM ghcr.io/unpinned/fedora-silverblue:39
+#FROM ghcr.io/unpinned/fedora-silverblue:39
+
+FROM quay.io/fedora-ostree-desktops/silverblue:39
 
 #RUN rpm-ostree cliwrap install-to-root /
 
