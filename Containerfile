@@ -7,7 +7,7 @@ FROM quay.io/fedora-ostree-desktops/silverblue:39
 RUN rpm-ostree override remove gnome-terminal gnome-terminal-nautilus firefox firefox-langpacks && \
     wget https://raw.githubusercontent.com/unpinned/temp-file/main/brave-browser-nightly.repo -O /etc/yum.repos.d/brave-browser-nightly.repo && \
     #rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/vte291/0.74.0/1.fc39/x86_64/vte-profile-0.74.0-1.fc39.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/vte291/0.74.0/1.fc39/x86_64/vte291-0.74.0-1.fc39.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/vte291/0.74.0/1.fc39/x86_64/vte291-gtk4-0.74.0-1.fc39.x86_64.rpm && \
-    rpm-ostree install brave-browser-nightly btop gnome-console gdb fd-find fish distrobox && \
+    rpm-ostree install btop gnome-console gdb fd-find fish distrobox && \
     rm var/lib/unbound/root.key && \
     rpm-ostree override replace https://kojipkgs.fedoraproject.org//packages/distrobox/1.5.0.2/2.fc39/noarch/distrobox-1.5.0.2-2.fc39.noarch.rpm && \
     #cd /etc/yum.repos.d/ && \
