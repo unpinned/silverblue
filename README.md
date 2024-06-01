@@ -1,4 +1,4 @@
-Fedora Silverblue with the packages I need.
+Silverblue with the packages I need.
 
 **Usage:**
 
